@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:contentPaddingTop="20dp"
+    app:contentPaddingLeft="10dp"
+    app:contentPaddingRight="10dp"
+    app:contentPaddingBottom="10dp"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_color="@color/primary"
+            android:src="@drawable/profile_img"
+            android:layout_centerHorizontal="true"
+            app:civ_border_width="1dp"
+            android:id="@+id/userProfileImg"/>
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paying User Name"
+            android:layout_below="@id/userProfileImg"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginTop="5dp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 "
+            android:layout_below="@id/userName"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="100dp"
+            android:textSize="24sp"
+            android:maxWidth="200dp"
+            android:layout_height="50dp"
+            android:hint="0"
+            android:drawableLeft="@drawable/currencyinr"
+            android:layout_below="@id/mobile"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="numberDecimal"
+            android:focusable="true"/>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textStyle="bold"
+            android:backgroundTint="@color/green"
+            android:layout_below="@id/amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note : After adding amount refresh\n the page"
+            android:layout_below="@id/btnSend"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

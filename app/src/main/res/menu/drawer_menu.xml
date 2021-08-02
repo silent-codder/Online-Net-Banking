@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:checked="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/list"
+        android:title="All Customer List"
+        android:icon="@drawable/ic_baseline_list_24"
+        tools:ignore="HardcodedText" />
+<!--    <item android:id="@+id/add"-->
+<!--        android:title="Add New Customer"-->
+<!--        android:icon="@drawable/ic_baseline_person_add_24"-->
+<!--        tools:ignore="HardcodedText" />-->
+    <item android:id="@+id/logout"
+        android:title="LogOut"
+        android:icon="@drawable/ic_baseline_logout_24"
+        tools:ignore="HardcodedText" />
+
+</menu>

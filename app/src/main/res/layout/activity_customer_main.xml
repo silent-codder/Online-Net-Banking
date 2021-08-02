@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerMainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile_img"
+        android:layout_margin="20dp"
+        app:civ_border_width="0.5dp"
+        app:civ_border_color="@color/primary"
+        android:id="@+id/img"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile_img"
+        android:layout_margin="20dp"
+        app:civ_border_width="0.5dp"
+        android:id="@+id/userProfileImg"/>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:queryHint="Search People by mobile number"
+        android:layout_margin="15dp"
+        android:id="@+id/search_bar"/>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:drawableTop="@drawable/ic_bank"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appName"
+        android:textColor="@color/primary"
+        android:text="Welcome, User Name"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="42dp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardElevation="20dp"
+        android:layout_marginTop="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="23dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="People"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/text"
+                android:id="@+id/recycleView"/>
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yet People not available"
+                android:drawableTop="@drawable/ic_baseline_group_24"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/text"
+                android:layout_marginTop="30dp"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/white"
+                android:layout_below="@id/recycleView"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/transactionHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Show transaction history"
+                android:layout_below="@id/view"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_right_24"
+                android:drawableLeft="@drawable/ic_baseline_history_24"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/btnViewBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="View account balance"
+                android:layout_below="@id/transactionHistory"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_right_24"
+                android:drawableLeft="@drawable/ic_baseline_account_balance_24"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

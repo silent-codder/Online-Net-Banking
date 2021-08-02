@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "333552929421",
+    "project_id": "online-net-banking-dd6f5",
+    "storage_bucket": "online-net-banking-dd6f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333552929421:android:846765eb25d2f26ca5b0c4",
+        "android_client_info": {
+          "package_name": "com.collegeproject.onlinenetbanking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333552929421-hc8h5kv47r0f8dsp98p77bm03ngc0cvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn-OKgizalrEna6OaAssako0BkahoYcB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333552929421-hc8h5kv47r0f8dsp98p77bm03ngc0cvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

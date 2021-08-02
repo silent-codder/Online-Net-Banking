@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:civ_border_width="0.5dp"
+            android:src="@drawable/profile_img"
+            android:id="@+id/userProfileImg"/>
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:layout_toRightOf="@id/userProfileImg"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/accountBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Balance : ₹0.00"
+            android:layout_below="@id/userName"
+            android:layout_toRightOf="@id/userProfileImg"
+            android:layout_marginLeft="10dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/btnViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="View Details"
+            android:layout_below="@id/accountBalance"
+            android:layout_toRightOf="@id/userProfileImg"
+            android:layout_marginLeft="10dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_below="@id/userProfileImg"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_below="@id/userProfileImg"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/btnEdit"
+            android:backgroundTint="@color/red"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btnTransaction"
+            android:layout_toRightOf="@id/btnDelete"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/userProfileImg"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/light_green"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:id="@+id/verify"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/iconfinder_tick_green_619543"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

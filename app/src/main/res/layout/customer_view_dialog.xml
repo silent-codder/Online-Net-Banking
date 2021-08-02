@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:contentPaddingTop="20dp"
+    app:contentPaddingLeft="10dp"
+    app:contentPaddingRight="10dp"
+    app:contentPaddingBottom="10dp"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile_img"
+            android:layout_centerHorizontal="true"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/primary"
+            android:id="@+id/userProfileImg"/>
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:layout_below="@id/userProfileImg"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginTop="5dp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 "
+            android:textColor="@color/primary"
+            android:layout_below="@id/userName"
+            android:layout_centerHorizontal="true"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/accountBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Balance : 0.00"
+            android:textSize="18sp"
+            android:textColor="@color/green"
+            android:layout_below="@id/mobile"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountBalance"
+            android:text="View Details"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"
+            android:layout_marginTop="10dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnTransaction"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountBalance"
+            android:text="Transaction"
+            android:backgroundTint="@color/light_green"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnAddAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnViewDetails"
+            android:text="Add Amount"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
